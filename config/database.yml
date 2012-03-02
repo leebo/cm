@@ -15,8 +15,8 @@ development:
   database: cf
   pool: 5
   username: cf
-  password: workstation
-  host: s2.bcloud.me
+  password: 
+  host: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -38,5 +38,5 @@ production:
   database: cf
   pool: 5
   username: cf
-  password: workstation
-  host: s2.bcloud.me
+  password: 
+  host: 

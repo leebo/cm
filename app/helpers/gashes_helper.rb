@@ -1,0 +1,2 @@
+module GashesHelper
+end

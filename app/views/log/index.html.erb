@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>lastid</th>
+    <th>count</th>
+    <th>allpoints</th>
+    <th>times</th>
+  </tr>
+<% @cm_logs.each do |log| %>
+    <tr>
+      <td><%= log.lastid %></td>
+      <td><%= log.count %></td>
+      <td><%= log.allpoints %></td>
+      <td><%= log.created_at %></td>
+    </tr>
+<% end %>
+</table>

@@ -15,8 +15,8 @@ development:
   database: cf
   pool: 5
   username: cf
-  password: 
-  host: 
+  password: lendlove
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

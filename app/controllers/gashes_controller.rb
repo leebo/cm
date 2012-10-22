@@ -17,10 +17,11 @@ class GashesController < ApplicationController
     rescue
       id=630011
     end
-    gashes= Gash.where("points>=50 and id>?",id)
+    gashes= Gash.where("points>=300 and id>?",id)
     info=""
     allpoints=0
     lastid=0
+    lastid=id if gashes.empty?
     gashes.each do |gash|
       allpoints += gash.points
       info= info + gash.userid  + "," + gash.password + "," + gash.points.to_s + "\r\n"

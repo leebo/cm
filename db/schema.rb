@@ -68,12 +68,24 @@ ActiveRecord::Schema.define(:version => 20120301112028) do
     t.timestamp "times",                  :null => false
     t.integer   "points"
     t.string    "email"
+    t.string    "birthday"
+    t.integer   "state"
+  end
+
+  create_table "gash_zhok", :force => true do |t|
+    t.string "userid",   :limit => 50, :null => false
+    t.string "password", :limit => 50, :null => false
   end
 
   create_table "gashzh", :force => true do |t|
     t.string    "userid",   :limit => 50, :null => false
     t.string    "password", :limit => 50, :null => false
     t.timestamp "times",                  :null => false
+  end
+
+  create_table "gashzhnew", :id => false, :force => true do |t|
+    t.string "userid",   :limit => 50, :null => false
+    t.string "password", :limit => 50, :null => false
   end
 
   create_table "idcard", :force => true do |t|
@@ -167,6 +179,18 @@ ActiveRecord::Schema.define(:version => 20120301112028) do
     t.string    "userid",   :limit => 50, :null => false
     t.string    "password", :limit => 50, :null => false
     t.timestamp "times",                  :null => false
+  end
+
+  create_table "tt1info", :force => true do |t|
+    t.string    "userid",     :limit => 50, :null => false
+    t.string    "password",   :limit => 50, :null => false
+    t.timestamp "times"
+    t.integer   "points"
+    t.string    "gameid"
+    t.string    "jifei"
+    t.integer   "gamepoints"
+    t.integer   "state"
+    t.string    "daoqi"
   end
 
   create_table "users", :primary_key => "Id", :force => true do |t|

@@ -14,7 +14,7 @@ development:
   reconnect: false
   database: cf
   pool: 5
-  username: cf
+  username: root 
   password: lendlove
   host: localhost
 
